@@ -1,0 +1,19 @@
+{
+  "name": "conversor-pdf-sicoob",
+  "version": "1.0.0",
+  "description": "Conversor de relatórios Sicoob em PDF para arquivo JSON",
+  "type": "module",
+  "bin": {
+    "sicoob-parse": "./src/interface/cli/index.js"
+  },
+  "scripts": {
+    "start": "node ./src/interface/cli/index.js ./ArquivosPDF/Sicoob.pdf -o extracao.json"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "pdfreader": "3.0.5"
+  }
+}
